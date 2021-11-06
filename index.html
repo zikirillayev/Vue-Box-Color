@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <center>
+            <div v-bind:class="color" style="border: 2px purple solid;"></div>
+            <p><input type="radio" name="checker" checked id="box1" class="checker1"  v-model="color" value="red"><label for="box1">Red</label></p>
+<p><input type="radio" name="checker" id="box2" class="checker1"  v-model="color" value="green"><label for="box2">Green</label></p>
+<p><input type="radio" name="checker" id="box3" class="checker1"  v-model="color" value="blue"><label for="box3">Blue</label></p>
+        </center>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
